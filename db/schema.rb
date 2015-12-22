@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 20151222132607) do
     t.integer  "amount"
     t.string   "description"
     t.string   "currency"
-    t.string   "customr_id"
+    t.string   "customer_id"
     t.string   "card"
     t.string   "product_id"
     t.datetime "created_at",  null: false
