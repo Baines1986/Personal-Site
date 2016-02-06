@@ -9,7 +9,7 @@
 growth_hacking = Product.create(
 title: "Growth Hacking", subtitle: "Crash Course", author: "Mattan Griffel", 
  length: "30 minutes", author_image_name: "teacher-image.jpg", 
- price: "4.99", sku: "GROHACK1", download_url: "https://s3.amazonaws.com/one-month-stripe-payments/Peter+Bell+Resume.pdf", 
+ price: "4.99", sku: "GROHACK1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
  details: "You'll get one video", description: %{<p>A growth hacker is a rare combination: someone with the right marketing and technical skills who can come up with clever marketing hacks and also track their results.</p>
 
  <p>In this talk, Mattan Griffel introduces you to the concept of Growth Hacking and shares his favorite tips for getting started as a growth hacker.</p>
@@ -28,7 +28,7 @@ title: "Growth Hacking", subtitle: "Crash Course", author: "Mattan Griffel",
 growth_hacking_monthly = Product.create(title: "Growth Hacking Monthly", 
  subtitle: "Ongoing Course", author: "Mattan Griffel", 
  length: "6 months", author_image_name: "teacher-image.jpg", 
- price: "4.99", sku: "GROHACK2", download_url: "https://s3.amazonaws.com/one-month-stripe-payments/Peter+Bell+Resume.pdf", 
+ price: "4.99", sku: "GROHACK2", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
  details: "We'll charge you monthly for unlimited access to our mentoring team", description: %{<p>A growth hacker is a rare combination: someone with the right marketing and technical skills who can come up with clever marketing hacks and also track their results.</p>
 
  <p>In this series, Mattan Griffel introduces you to the concept of Growth Hacking and shares his favorite tips for getting started as a growth hacker.</p>
