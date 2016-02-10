@@ -1,0 +1,20 @@
+<section id="products">
+
+<% @products.each do |product| %>
+
+ <div class="product clearfix">
+   <a href="product-detail.html">
+    <div class="product-image-container">
+     <img src="<%= asset_path 'product-growth-hacking.png' %>" alt="product image"/>
+     <span class="product-price"><%= product.price %></span>
+   </div>
+   <p class="product-title"><%= product.title %></p></a>
+ </div>
+
+<% end %>
+
+
+<!-- product-copywriting.png
+product-analytics.png -->
+
+ </section>
