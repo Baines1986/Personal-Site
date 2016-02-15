@@ -1,6 +1,12 @@
-<article id="details-article" class="col-sm-8">
+<% content_for :head do %>
+  <%= image_tag('header-image.jpg', id: 'content-header-img', alt: 'Check-Out Our Courses') %>
+<% end %>
+
+<section id="content-details" class="row clearfix">
+  <article id="details-article" class="col-sm-8">
     <h1 id="article-title">Our Courses</h1>
-</article>
+  </article>
+</section> 
 
 <section id="products">
   <% @products.each do |product| %>
