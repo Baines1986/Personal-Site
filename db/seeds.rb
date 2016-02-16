@@ -31,7 +31,7 @@ growth_hacking_monthly = Product.create(
  subtitle: "Deep-Dive", author: "Mattan Griffel", 
  length: "One-Off", author_image_name: "teacher-image.jpg", 
  price: "19.99", sku: "GROHACK2", download_url: "https://vimeo.com/99994840", download_info: "onemonth",
- details: "We'll charge you monthly for unlimited access to our mentoring team", 
+ details: "We'll charge you for unlimited access to our Growth Hacking Workshop Deep Dive", 
  description: %{<p>A growth hacker is a rare combination: someone with the right marketing and technical skills who can come up with clever marketing hacks and also track their results.</p>
 
  <p>In this series, Mattan Griffel introduces you to the concept of Growth Hacking and shares his favorite tips for getting started as a growth hacker.</p>
