@@ -55,6 +55,7 @@ ActiveRecord::Schema.define(version: 20160206180427) do
     t.string   "sku"
     t.string   "length"
     t.string   "download_url"
+    t.string   "download_info"
     t.string   "details"
     t.text     "description"
     t.string   "author_description"

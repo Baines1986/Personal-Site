@@ -9,6 +9,7 @@ class CreateProducts < ActiveRecord::Migration
 		t.string :sku
 		t.string :length
 		t.string :download_url
+		t.string :download_info
 		t.string :details
 		t.text :description
 		t.string :author_description

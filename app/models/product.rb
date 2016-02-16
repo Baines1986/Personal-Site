@@ -3,7 +3,7 @@ class Product < ActiveRecord::Base
       "#{self.title} #{self.subtitle}"
     end
     def price_in_cents
-    	(self.price * 100).to_i
+    	(self.price * 100).round(2)
     end
 
     def image_name
