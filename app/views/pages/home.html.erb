@@ -1,88 +1,329 @@
-<section id="content-details" class="row clearfix">
-    <article id="details-article" class="col-sm-8">
-        <h1 id="article-title"><%= @product.title %> <span class="font-weight-light"><%= @product.subtitle %></span></h1>
-        <h3><small>By <a href="#" data-toggle="modal" data-target="#author-modal"><%= @product.author %></a></small></h3>
+<% content_for :head do %>
+    <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
 
-        <%= raw @product.description %>
+        <!-- One per Carousel Image -->
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
 
-    </article>
-    <aside id="details-aside" class="col-sm-4">
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <%= image_tag('cr_advisory.jpg', id: 'first-slide', alt: 'Technology') %>
+          <div class="carousel-caption">
+            <h1>About Stephen</h1>
+            <p id="button" class="btn btn-primary btn-lg" role="button"><%= link_to "About", about_path, id: "button" %></p>
+          </div>
+        </div>
 
-        <%= form_tag charges_path, id:'chargeForm' do %>
+        <div class="item">
+          <%= image_tag('cr_portfolio.jpg', id: 'second-slide', alt: 'Technology') %>
+          <div class="carousel-caption">
+            <h1>Portfolio</h1>
+            <p id="button" class="btn btn-primary btn-lg" role="button"><%= link_to "Portfolio", portfolio_path, id: "button" %></p>
+          </div>
+        </div>
 
-        <script src="https://checkout.stripe.com/checkout.js"></script> 
-          <%= hidden_field_tag 'stripeToken' %>
-          <%= hidden_field_tag 'stripeEmail' %>
-          <%= hidden_field_tag 'amount', @product.price_in_cents %>
-          <button id="btn-buy" type='button' class="btn btn-success btn-lg btn-block"><span class="glyphicon glyphicon-ok"></span>I want this!</button>
+        <div class="item">
+          <%= image_tag('cr_ebook.jpg', id: 'third-slide', alt: 'Technology') %>
+          <div class="carousel-caption">
+            <h1>Blog</h1>
+            <p id="button" class="btn btn-primary btn-lg" role="button"><%= link_to "Blog", blog_path, id: "button" %></p>
+          </div>
+        </div>
 
-          <script>
-            var handler = StripeCheckout.configure({
-              key: '<%= Rails.configuration.stripe[:publishable_key] %>',
-              token: function(token, arg) {
-                document.getElementById("stripeToken").value = token.id;
-                document.getElementById("stripeEmail").value = token.email;
-                document.getElementById("chargeForm").submit();                
-              }
-            });
+        <div class="item">
+          <%= image_tag('cr_tech4.jpg', id: 'fourth-slide', alt: 'Technology') %>
+          <div class="carousel-caption">
+            <h1>Products & Services</h1>
+            <p id="button" class="btn btn-primary btn-lg" role="button"><%= link_to "Products", products_path, id: "button" %></p>
+          </div>
+        </div>
 
-            document.getElementById('btn-buy').addEventListener('click', function(e) {
-              handler.open({
-                name: 'One Month',
-                description: '<%= @product.title %> <%= @product.subtitle %>  ($<%= @product.price %> )',
-                amount: document.getElementById("amount").value
-              });
-              e.preventDefault();
-            })
-          </script>
+        <div class="item">
+          <%= image_tag('cr_tech7.jpg', id: 'fifth-slide', alt: 'Technology') %>
+          <div class="carousel-caption">
+            <h1>Contact</h1>
+            <p id="button" class="btn btn-primary btn-lg" role="button"><%= link_to "Contact", contact_path, id: "button" %></p>
+          </div>
+        </div>
 
-        <% end %>
+      </div>
 
-        <ul id="details-infobox" class="list-group">
-          <li class="list-group-item active clearfix">DETAILS</li>
-          <li class="list-group-item"><%= @product.details %></li>
-          <li class="list-group-item clearfix">
-            <span class="pull-left content-qualifier">Length</span>
-            <span class="pull-right"><%= @product.length %></span>
-          </li>
-        </ul>
-    </aside>
+      <!-- Carousel Control -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+<% end %>
+
+<section class="row clearfix">
+	<div class="spacer">
+	</div>
 </section>
 
-<footer id="site-footer">
-Made by <a href="http://onemonth.com" target="_blank"><%= image_tag('one-month-logo.svg', id: 'one-month-footer-logo', alt: 'One Month') %></a>
+<section class="row clearfix">
+	<div class="bg-fl bg-fl-5">
+	  <div class="bg-full-cn bg-left-cn">
+		<div class="row text-center">
+		    <p class="lead">Advising Leaders on Achieving their Digital & Technology-Enabled Vision</p>
+		    <p id="button" class="btn btn-primary btn-lg" role="button" href="Curriculum_Vitae_(Stephen Baines).pdf" target="_blank">Download Resume</p>
+		</div>
+	  </div>
+	</div>
+</section>
 
+<section class="row clearfix">
+	<div class="spacer">
+	</div>
+</section>
 
+<section class="row clearfix text-center">
+	<div class="bg-fl bg-fl-2">
+	  <div class="bg-cn bg-left-cn">
+		<div class="row text-center">
+		    <div class="col-sm-10 col-sm-offset-1">
+		      <h1 class="">Industry Experience</h1>
+		      <p class="lead">A Career spanning Three Industry Leading Multinational Corporations with skills developed at Highly-Ranked Educational Establishments</p>
+		      <p class="lead">Experiences through engagement with a diverse range of Clients, Industries and Sectors all leading to a Series of Awards and Recognitions.</p>
+		    </div>
+	    </div>
 
-</footer>
-
-<!-- Modal -->
-<div class="modal fade" id="author-modal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h4 class="modal-title"><span class="glyphicon glyphicon-user"></span>About the Teacher</h4>
-      </div>
-      <div class="modal-body clearfix">
-            <div id="modal-left" class="pull-left">
-                <p><strong><%= @product.author %> </strong></p>
-                
-                <%= raw @product.author_description %>
-
-
-            </div>
-            <div id="modal-right" class="pull-right">
-
-                <%= image_tag( @product.author_image_name, alt: @product.author) %>
-            </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	    <div class="row text-center">
+		    <div class="col-md-12">
+		      <p>
+		      	<%= image_tag('lg_hp.png', id: 'cert-image', alt: 'HP Logo') %>
+		      	<%= image_tag('lg_hpe.png', id: 'cert-image', alt: 'HPE Logo') %>
+		        <%= image_tag('lg_nissan.png', id: 'cert-image', alt: 'Nissan Logo') %>
+		      </p>
+		    </div>
+		</div>
       </div>
     </div>
-  </div>
-</div>
+</section>
 
-<!-- Scripts -->
-<script src="https://code.jquery.com/jquery-latest.min.js"></script>
-<script src="js/lib/bootstrap.min.js"></script>
+<section class="row clearfix">
+	<div class="spacer">
+	</div>
+</section>
+
+<section class="row clearfix text-center">
+	<div class="bg-fl bg-fl-3">
+	  <div class="bg-cn bg-right-cn">
+		<div class="row">
+		    <div class="col-sm-10 col-sm-offset-1 text-center">
+		      <h1 class="">Education</h1>
+		      <p class="lead">Skills Developed at Highly-Ranked Educational Establishments & Summits:</p>
+		    </div>
+	    </div>
+
+		<div class="row text-center">
+		    <div class="col-md-12">
+		      <p>
+		      	<%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
+		      	<%= image_tag('lg_ncl.jpg', id: 'cert-image', alt: 'Newcastle Uni Logo') %>
+		        <%= image_tag('lg_om.png', id: 'cert-image', alt: 'One Month Logo') %>
+		      	<%= image_tag('lg_ws.png', id: 'cert-image', alt: 'Web Summit Logo') %>
+		      	<%= image_tag('lg_oyw.jpg', id: 'cert-image', alt: 'One Young World Logo') %>
+		        <%= image_tag('lg_siyli.jpg', id: 'cert-image', alt: 'SIYLI Logo') %>	        
+		      </p>
+		    </div>
+		</div>
+      </div>
+    </div>
+</section>
+
+<section class="row clearfix">
+	<div class="spacer">
+	</div>
+</section>
+
+<section class="row clearfix text-center">
+	<div class="bg-fl bg-fl-4">
+	  <div class="bg-cn bg-left-cn">
+	    <div class="row text-center">
+	        <div class="col-md-12">
+	          <h1 class="">HPE Clients</h1>
+	          <p class="lead">Engagement across a Diverse Range of Clients, Industries and Sectors</p>
+	        </div>
+	    </div>
+
+	    <div class="row text-center">
+	        <div class="col-md-12">
+	          <p>
+	        	<%= image_tag('lg_po.png', id: 'cert-image', alt: 'Post Office Logo') %>
+	        	<%= image_tag('lg_lbs.png', id: 'cert-image', alt: 'Leeds Building Society Logo') %>
+	        	<%= image_tag('lg_allied.png', id: 'cert-image', alt: 'Allied Healthcare Logo') %>
+	        	<%= image_tag('lg_shell.png', id: 'cert-image', alt: 'Shell Logo') %>
+	        	<%= image_tag('lg_vodafone.png', id: 'cert-image', alt: 'Vodafone Logo') %>
+	        	<%= image_tag('lg_seadrill.png', id: 'cert-image', alt: 'Seadrill Logo') %>
+	        	<%= image_tag('lg_moj.png', id: 'cert-image', alt: 'Ministry of Justice Logo') %>
+	        	<%= image_tag('lg_rr.png', id: 'cert-image', alt: 'Rolls Royce Logo') %>
+	        	<%= image_tag('lg_alu.png', id: 'cert-image', alt: 'Alcatel Lucent Logo') %>
+	        	<%= image_tag('lg_atlas.png', id: 'cert-image', alt: 'Atlas Logo') %>                  
+	          </p>
+	        </div>
+	    </div>
+	  </div>
+    </div>
+</section>
+
+<section class="row clearfix">
+	<div class="spacer">
+	</div>
+</section>
+
+<section class="row clearfix">
+	<div class="bg-fl bg-fl-5">
+	  <div class="bg-full-cn bg-left-cn">
+	    <div class="row text-center">
+	        <div class="col-md-12">
+	          <h1 class="">Awards and Recognitions</h1>
+	          <p class="lead text-center">A Series of High-Profile Awards and Recognitions</p>
+	        </div>
+	    </div>
+	    <div class="row">
+		    <div class="col-md-12">
+		      <div class="col-md-3">
+		        <div class="cert-content">
+		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
+		          <p><Strong>Executive MBA</Strong></p>
+		          <p>Distinction Award</p><br>
+
+		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
+		          <p><Strong>Venture Out Competition 2015</Strong></p>
+		          <p>Finalist (Slint)</p><br>
+
+		      	  <%= image_tag('lg_ncl.jpg', id: 'cert-image', alt: 'Newcastle Uni Logo') %>
+		          <p><Strong>Computing Science</Strong></p>
+		          <p>Group Project Winners</p><br>
+
+		          <%= image_tag('lg_pmi.png', id: 'cert-image', alt: 'Project Management Inst Logo') %>
+		          <p><Strong>Certified Project Manager</Strong></p>
+		          <p>CAPM (Award)</p>
+		        </div>
+		      </div>
+		      <div class="col-md-3">
+		        <div class="cert-content">
+		      	  <%= image_tag('lg_ncl.jpg', id: 'cert-image', alt: 'Newcastle Uni Logo') %>
+		          <p><Strong>Bachelors of Science</Strong></p>
+		          <p>Upper 2:1 Award</p><br>
+
+		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
+		          <p><Strong>Venture Further Competition 2014</Strong></p>
+		          <p>Runner-Up (Fitifi)</p><br>
+
+	  	      	  <%= image_tag('lg_oyw.jpg', id: 'cert-image', alt: 'One Young World Logo') %>
+		          <p><Strong>One Young World</Strong></p>
+		          <p>Global Ambassador</p><br>
+
+		          <%= image_tag('lg_om.png', id: 'cert-image', alt: 'One Month Logo') %>
+		          <p><Strong>OneMonth.com</Strong></p>
+		          <p>Ruby on Rails Certification</p><br>
+		        </div>
+		      </div>
+		      <div class="col-md-3">
+		        <div class="cert-content">
+		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
+		          <p><Strong>Overall EMBA Performance</Strong></p>
+		          <p>Top 10% of Cohort</p><br>
+
+		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
+		          <p><Strong>What Next Conference 2014</Strong></p>
+		          <p>Best Business Proposal</p><br>
+
+		          <%= image_tag('lg_mec.png', id: 'cert-image', alt: 'Manchester Enterprise Centre Logo') %>
+		          <p><Strong>Enterprise Future Conference 2013</Strong></p>
+		          <p>2nd Place Business Proposal</p><br>
+
+		          <%= image_tag('lg_om.png', id: 'cert-image', alt: 'One Month Logo') %>
+		          <p><Strong>OneMonth.com</Strong></p>
+		          <p>HTML & CSS Certification</p><br>
+
+		          <img class="cert-image" src="">
+		          <p><Strong></Strong></p>
+		          <p></p>
+		        </div>
+		      </div>
+		      <div class="col-md-3">
+		        <div class="cert-content">
+		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
+		          <p><Strong>Best Individual Thesis</Strong></p>
+		          <p>Top Individual Project</p><br>
+
+		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
+		          <p><Strong>Adv Strategic Management 2014</Strong></p>
+		          <p>Top Performer (Top 5%)</p><br>
+
+		          <%= image_tag('lg_om.png', id: 'cert-image', alt: 'One Month Logo') %>
+		          <p><Strong>OneMonth.com</Strong></p>
+		          <p>Stripe Payments Certification</p>
+
+		          <img class="cert-image" src="">
+		          <p><Strong></Strong></p>
+		          <p></p>
+		        </div>
+		      </div>
+	        </div>
+	    </div>
+	  </div>
+    </div>
+</section>
+
+<section class="row clearfix">
+	<div class="spacer">
+	</div>
+</section>
+
+<section class="row clearfix">
+	<div class="bg-fl bg-fl-6">
+	  <div class="bg-cn bg-left-cn">
+	    <h1 class="text-center">Blogs & Articles</h1>
+        <p class="lead text-center">Articles across an Array of Hot-Topics and Written to the Highest Standard</p>
+        <p>Stephen writes across a number of topics based upon his interests and expertise, including:</p>
+        <ul>
+        	<li>Technology</li>
+        	<li>Digital Strategy</li>
+        	<li>Business Model Design</li>
+        	<li>Radical Innovation</li>
+        	<li>Leadership</li>  
+        	<li>Career Development</li>
+        	<li>Emotional Intelligence</li>       	
+        </ul>
+        <p>Check-out his blog for more detail both on this website and on LinkedIn</p>
+        <a href="https://uk.linkedin.com/in/stephenbaines" target="_blank"><%= image_tag('linkedin.png', id: 'BgSocialIcon', alt: 'LinkedIn Link') %></a>
+      </div>
+    </div>
+</section>
+
+<section class="row clearfix">
+	<div class="spacer">
+	</div>
+</section>
+
+<section class="row clearfix">
+	<div class="bg-fl bg-fl-7">
+	  <div class="bg-cn bg-right-cn">
+	    <h1 class="text-center">Products & Services</h1>
+        <p class="lead text-center">Exemplary Tried-and-Test Services, Best Practice and Methodologies</p>
+        <p>Being a seasoned expert in his field, Stephen has developed a series of tried and test methodologies and best practices which are now available for purchase. These products and services include:</p>
+        <ul>
+        	<li>Best Practice Documentation</li>
+        	<li>Advisory Services</li>
+        	<li>Start-Up Mentoring</li>
+        	<li>Digital Media Content</li>
+        </ul>
+
+        <p>These products and services can be found described in the Products section</p>
+      </div>
+    </div>
+</section>

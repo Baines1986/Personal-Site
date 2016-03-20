@@ -2,7 +2,19 @@ Rails.application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  root 'products#index'
+
+  root 'pages#home'
+
+  get "about" => "pages#about"
+  get "portfolio" => "pages#portfolio"
+  get "blog" => "pages#blog"
+  get "contact" => "pages#contact"
+  get "products" => "products#index"
+
+  get '/blogs' => "pages#blog"
+  get '/blogs/40' => 'blogs#40'
+  get '/blogs/39' => 'blogs#39'
+  get '/blogs/38' => 'blogs#38'  
 
   # Support stripe payments through charges
   resources :charges
