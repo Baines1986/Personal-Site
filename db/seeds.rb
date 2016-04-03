@@ -49,7 +49,7 @@ growth_hacking_workshop = Product.create(
  )
 
 accounting_and_finance = Product.create(
- title: "Accounting and Finance", 
+ title: "Accounting & Finance Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
  price: "9.99", sku: "ACCTFIN1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
@@ -73,7 +73,7 @@ accounting_and_finance = Product.create(
  )
 
 adv_strat_man = Product.create(
- title: "Adv Strategic M'ment", 
+ title: "Adv Strategic M'ment Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
  price: "14.99", sku: "ADSTRMN1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
@@ -97,7 +97,7 @@ adv_strat_man = Product.create(
  )
 
 corporate_finance = Product.create(
- title: "Corporate Finance", 
+ title: "Corporate Finance Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
  price: "9.99", sku: "CORPFIN1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
@@ -121,7 +121,7 @@ corporate_finance = Product.create(
  )
 
 int_bus_strat = Product.create(
- title: "International Business Strategy", 
+ title: "Int'l Business Strategy Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
  price: "14.99", sku: "INBUSTR1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
@@ -145,7 +145,7 @@ int_bus_strat = Product.create(
  )
 
 managerial_econ = Product.create(
- title: "Managerial Economics", 
+ title: "Managerial Economics Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
  price: "7.49", sku: "MANECON1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
@@ -169,7 +169,7 @@ managerial_econ = Product.create(
  )
 
 strat_man = Product.create(
- title: "Strategic Management", 
+ title: "Strategic Management Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
  price: "14.99", sku: "STRAMAN1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
@@ -184,63 +184,12 @@ strat_man = Product.create(
  <li>An applied example of the UK&I Tablet market with a focus on one of the leading manufacturers</li>
  <li>To use a successful framework to build-out a Distinction-Level assignment</li>
  <li>References and Citations to support a Corporate Finance-Focused deliverable</li>
- <li>Unique and depth insights into the overall positioning of the HP Slate tablets</li>
+ <li>Unique and depth insights into the overall positioning of the HP Slate</li>
  </ul>}, 
  author_description: %{ <p>Hey, I'm Stephen Baines, MBA and Management Consultant for Hewlett Packard Enterprise where I advise businesses on how to solve their most complex Technology and Business problems.</p>
  <p>Why purchase my work? All of my MBA work resulted in a Distinction grade at a top UK Business School. In addition, I have advised and worked with corporates including Lloyds Banking Group, Alcatel-Lucent, Vodafone, Rolls Royce and Seadrill on solving their most complex business and technology problems. My goal is to help you to achieve the MBA Distinction grade you deserve by providing you with insight of the framework, approach and content to build a successful assignment 
  </p>
  <p>Follow me on Twitter <a href="https://twitter.com/baines1986" target="_blank">@baines1986</a></p>}
- )
-
-
-
-
-
-
-
-copywriting_monthly = Product.create(
- title: "Accounting and Finance", 
- subtitle: "Reference Assignment", author: "Stephen Baines", 
- length: "N/A", author_image_name: "stephen-baines.jpg", 
- price: "9.99", sku: "ACCTFIN1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
- download_info: "N/A",
- details: "We'll charge you for a PDF copy of a Distinction MBA assignment for reference purposes only", 
- description: %{<p>Copywriting is a rare combination: someone with the right skills in writing and skills in communication.</p>
-
- <p>In this assignment, Stephen Baines introduces you to the practices of Managerial Accounting with an applied example in addition to a Balance Sheet deep-dive of one of the largest UK retailers.</p>
- <p><strong>What You'll Learn</strong></p>
- <ul class="no-indent">
- <li>How to build a Cash Budget, Income Statement and Balance Sheet</li>
- <li>How to interpret a balance sheet</li>
- <li>A successful framework to build-out a Distinction-Level assignment</li>
- <li>References and Citations to support a Finance assignment</li>
- <li>An understand of a Corporates Market vs Book Value</li>
- </ul>}, 
- author_description: %{ <p>Hey, I'm Stephen Baines, MBA and Management Consultant for Hewlett Packard Enterprise where I advise businesses on how to solve their most complex Technology and Business problems.</p>
- <p>Why purchase my work? All of my MBA work resulted in a Distinction grade at a top UK Business School. In addition, I have advised and worked with corporates including Lloyds Banking Group, Alcatel-Lucent, Vodafone, Rolls Royce and Seadrill on solving their most complex business and technology problems. My goal is to help you to achieve the MBA Distinction grade you deserve by providing you with insight of the framework, approach and content to build a successful assignment 
- </p>
- <p>Follow me on Twitter <a href="https://twitter.com/baines1986" target="_blank">@baines1986</a></p>}
- )
-
-analytics_monthly = Product.create(
- title: "Analytics Monthly", 
- subtitle: "Ongoing Course", author: "Mattan Griffel", 
- length: "6 months", author_image_name: "teacher-image.jpg", 
- price: "4.99", sku: "ANALYTICS2", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
- download_info: "N/A",
- details: "We'll charge you monthly for unlimited access to our mentoring team", 
- description: %{<p>Analytics is a rare combination: someone with the right skills in assessing datasets combined with the ability to translate the data into meaningful outcomes.</p>
-
- <p>In this series, Mattan Griffel introduces you to the concept of Analytics and shares his favorite tips for getting started as a Data Scientist.</p>
- <p><strong>What You'll Learn</strong></p>
- <ul class="no-indent">
- <li>How to improve your sales funnel using analytics</li>
- <li>How to use effective analytics tooling</li>
- </ul>}, 
- author_description: %{ <p>Hey, I'm Mattan Griffel, co-founder of the Y Combinator backed <a href="http://www.onemonth.com" target="_blank">One Month</a> where I teach the best selling One Month Rails and One Month Growth Hacking.</p>
- <p>Why take my class? In the past I've advised companies like Pepsico, Bloomberg, GM, NYSE, and JPMorgan on growth hacking best practices. I've also spoken at New York University, Cooper Union and First Round Capital. My goal is to help you and other entrepreneurs rapidly grow your business. 
- </p>
- <p>Follow me on Twitter <a href="https://twitter.com/mattangriffel" target="_blank">@mattangriffel</a></p>}
  )
 
 AdminUser.create!(email: 'admin@example.com', password: 'password', password_confirmation: 'password')
