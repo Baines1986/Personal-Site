@@ -5,6 +5,9 @@ ruby '2.2.4'
 
 # May need to switch to version 2.2.0 of Ruby
 
+# Added gem to resolve bundle install issue
+gem 'nokogiri', '~> 1.6', '>= 1.6.7'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 

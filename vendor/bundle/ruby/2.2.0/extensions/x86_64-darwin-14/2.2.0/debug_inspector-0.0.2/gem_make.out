@@ -1,0 +1,11 @@
+/Users/Stephen/.rvm/rubies/ruby-2.2.4/bin/ruby -r ./siteconf20160403-71071-i63z4h.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling debug_inspector.c
+linking shared-object debug_inspector.bundle
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug_inspector.bundle ./.gem.20160403-71071-1joo7r
