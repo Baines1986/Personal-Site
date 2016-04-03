@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 # Require a specific Ruby version
 ruby '2.2.4'
 
+# May need to switch to version 2.2.0 of Ruby
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0'
 
