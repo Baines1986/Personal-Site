@@ -52,7 +52,7 @@ accounting_and_finance = Product.create(
  title: "Accounting & Finance Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
- price: "9.99", sku: "ACCTFIN1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
+ price: "9.99", sku: "ACCTFIN1", download_url: "https://s3-eu-west-1.amazonaws.com/stephenjbaines-assets/MBA_Assignments/MBS_ACC_Gorton_Gardens.pdf", 
  download_info: "N/A",
  details: "We'll charge you for a PDF copy of a Distinction MBA assignment for reference purposes only", 
  description: %{<p>Writing a Distinction-Level MBA Assignment is a difficult undertaking. It takes a combination of skill, insight and an effective approach. This framework will help you to achieve that.</p>
@@ -76,7 +76,7 @@ adv_strat_man = Product.create(
  title: "Adv Strategic M'ment Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
- price: "14.99", sku: "ADSTRMN1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
+ price: "14.99", sku: "ADSTRMN1", download_url: "https://s3-eu-west-1.amazonaws.com/stephenjbaines-assets/MBA_Assignments/MBS_ASM_Uber.pdf", 
  download_info: "N/A",
  details: "We'll charge you for a PDF copy of a Distinction MBA assignment for reference purposes only", 
  description: %{<p>Writing a Distinction-Level MBA Assignment is a difficult undertaking. It takes a combination of skill, insight and an effective approach. This framework will help you to achieve that.</p>
@@ -100,7 +100,7 @@ corporate_finance = Product.create(
  title: "Corporate Finance Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
- price: "9.99", sku: "CORPFIN1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
+ price: "9.99", sku: "CORPFIN1", download_url: "https://s3-eu-west-1.amazonaws.com/stephenjbaines-assets/MBA_Assignments/MBS_CF_IFG.pdf", 
  download_info: "N/A",
  details: "We'll charge you for a PDF copy of a Distinction MBA assignment for reference purposes only", 
  description: %{<p>Writing a Distinction-Level MBA Assignment is a difficult undertaking. It takes a combination of skill, insight and an effective approach. This framework will help you to achieve that.</p>
@@ -124,7 +124,7 @@ int_bus_strat = Product.create(
  title: "Int'l Business Strategy Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
- price: "14.99", sku: "INBUSTR1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
+ price: "14.99", sku: "INBUSTR1", download_url: "https://s3-eu-west-1.amazonaws.com/stephenjbaines-assets/MBA_Assignments/MBS_IBS_Illy.pdf", 
  download_info: "N/A",
  details: "We'll charge you for a PDF copy of a Distinction MBA assignment for reference purposes only", 
  description: %{<p>Writing a Distinction-Level MBA Assignment is a difficult undertaking. It takes a combination of skill, insight and an effective approach. This framework will help you to achieve that.</p>
@@ -148,7 +148,7 @@ managerial_econ = Product.create(
  title: "Managerial Economics Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
- price: "7.49", sku: "MANECON1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
+ price: "7.49", sku: "MANECON1", download_url: "https://s3-eu-west-1.amazonaws.com/stephenjbaines-assets/MBA_Assignments/MBS_ME_Nissan.pdf", 
  download_info: "N/A",
  details: "We'll charge you for a PDF copy of a Distinction MBA assignment for reference purposes only", 
  description: %{<p>Writing a Distinction-Level MBA Assignment is a difficult undertaking. It takes a combination of skill, insight and an effective approach. This framework will help you to achieve that.</p>
@@ -172,7 +172,7 @@ strat_man = Product.create(
  title: "Strategic Management Paper", 
  subtitle: "MBA Reference Assignment", author: "Stephen Baines", 
  length: "N/A", author_image_name: "stephen-baines.jpg", 
- price: "14.99", sku: "STRAMAN1", download_url: "https://s3-eu-west-1.amazonaws.com/sb-om-stripe-payments/Resume++Stephen+Baines+Jan-16.pdf", 
+ price: "14.99", sku: "STRAMAN1", download_url: "https://s3-eu-west-1.amazonaws.com/stephenjbaines-assets/MBA_Assignments/MBS_SM_HP.pdf", 
  download_info: "N/A",
  details: "We'll charge you for a PDF copy of a Distinction MBA assignment for reference purposes only", 
  description: %{<p>Writing a Distinction-Level MBA Assignment is a difficult undertaking. It takes a combination of skill, insight and an effective approach. This framework will help you to achieve that.</p>
