@@ -10,6 +10,10 @@ Rails.application.routes.draw do
   get "blog" => "pages#blog"
   get "contact" => "pages#contact"
   get "products" => "products#index"
+  get "speaking" => "pages#speaking"
+  get "laws" => "pages#laws"
+  get "vision" => "pages#vision"
+  get "press" => "pages#press"
 
   get '/blogs' => "pages#blog"
   get '/blogs/40' => 'blogs#40'

@@ -2,28 +2,28 @@
   <%= image_tag('header-image.jpg', id: 'content-header-img', alt: 'Check-Out Our Courses') %>
 <% end %>
 
-<section id="content-details" class="row clearfix">
-  <article id="details-article" class="col-sm-8">
-    <h1 id="article-title">Products</h1>
-  </article>
-</section> 
-
-<section class="row clearfix">
-	<div class="bg-fl bg-fl-5">
-	  <div class="bg-full-cn bg-left-cn">
-		  <% @products.each do |product| %>
-			<div class="product clearfix">
-			   <a href="<%= product_path(product) %>">
-			   <div class="product-image-container">
-			     <img src="<%= asset_path product.thumbnail_image_name %>" alt="<%= product.title %>"/>
-			     <span class="product-price"><%= number_to_currency(product.price, precision: 2) %></span>
-			   </div>
-			   <p class="product-title"><%= product.title %></p></a>
-		    </div>
-		  <% end %>
-		</div>
+<section class="main-block">
+	<% @products.each do |product| %>
+	<div class="product clearfix">
+	   <a href="<%= product_path(product) %>">
+	   <div class="product-image-container">
+	     <img src="<%= asset_path product.thumbnail_image_name %>" alt="<%= product.title %>"/>
+	     <span class="product-price"><%= number_to_currency(product.price, precision: 2) %></span>
+	   </div>
+	   <p class="product-title text-center"><%= product.title %></p></a>
 	</div>
+	<% end %>
+
 </section>
 
-
-
+<section class="row clearfix">
+  <div class="bg-full bg-fl-0">
+    <div class="bg-full-cn">
+    <div class="row text-center">
+        <div class="col-sm-10 col-sm-offset-1">
+          <p class="lead">Copyright &copy; 2016 Stephen J. Baines</p>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>

@@ -13,42 +13,52 @@
 
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <%= image_tag('cr_advisory.jpg', id: 'first-slide', alt: 'Technology') %>
+          <%= image_tag('P6731_Baines_002.jpg', id: 'first-slide', alt: 'Technology') %>
           <div class="carousel-caption">
             <h1>About Stephen</h1>
-            <p id="button" class="btn btn-primary btn-lg" role="button"><%= link_to "About", about_path, id: "button" %></p>
+            <%= link_to about_path do %>
+                <p id="button" class="btn btn-primary btn-lg" role="button">About</p>
+            <% end %>
           </div>
         </div>
 
         <div class="item">
-          <%= image_tag('cr_portfolio.jpg', id: 'second-slide', alt: 'Technology') %>
+          <%= image_tag('ob.jpg', id: 'second-slide', alt: 'Technology') %>
           <div class="carousel-caption">
             <h1>Portfolio</h1>
-            <p id="button" class="btn btn-primary btn-lg" role="button"><%= link_to "Portfolio", portfolio_path, id: "button" %></p>
+            <%= link_to portfolio_path do %>
+                <p id="button" class="btn btn-primary btn-lg" role="button">Portfolio</p>
+            <% end %>
           </div>
         </div>
 
         <div class="item">
-          <%= image_tag('cr_ebook.jpg', id: 'third-slide', alt: 'Technology') %>
+          <%= image_tag('1.jpg', id: 'third-slide', alt: 'Technology') %>
           <div class="carousel-caption">
             <h1>Blog</h1>
-            <p id="button" class="btn btn-primary btn-lg" role="button"><%= link_to "Blog", blog_path, id: "button" %></p>
+            <%= link_to blog_path do %>
+                <p id="button" class="btn btn-primary btn-lg" role="button">Blog</p>
+            <% end %>
           </div>
         </div>
 
         <div class="item">
-          <%= image_tag('cr_tech4.jpg', id: 'fourth-slide', alt: 'Technology') %>
+          <%= image_tag('tech-2.jpg', id: 'fourth-slide', alt: 'Technology') %>
           <div class="carousel-caption">
             <h1>Products & Services</h1>
-            <p id="button" class="btn btn-primary btn-lg" role="button"><%= link_to "Products", products_path, id: "button" %></p>
+            <%= link_to products_path do %>
+                <p id="button" class="btn btn-primary btn-lg" role="button">Products</p>
+            <% end %>
           </div>
         </div>
 
         <div class="item">
-          <%= image_tag('cr_tech7.jpg', id: 'fifth-slide', alt: 'Technology') %>
+          <%= image_tag('6.jpg', id: 'fifth-slide', alt: 'Technology') %>
           <div class="carousel-caption">
             <h1>Contact</h1>
-            <p id="button" class="btn btn-primary btn-lg" role="button"><%= link_to "Contact", contact_path, id: "button" %></p>
+            <%= link_to contact_path do %>
+                <p id="button" class="btn btn-primary btn-lg" role="button">Contact</p>
+            <% end %>
           </div>
         </div>
 
@@ -66,264 +76,147 @@
     </div><!-- /.carousel -->
 <% end %>
 
-<section class="row clearfix">
-	<div class="spacer">
-	</div>
-</section>
 
 <section class="row clearfix">
-	<div class="bg-fl bg-fl-5">
-	  <div class="bg-full-cn bg-left-cn">
-		<div class="row text-center">
-		    <p class="lead">Advising Leaders on Achieving their Digital & Technology-Enabled Vision</p>
-		    <p id="button" class="btn btn-primary btn-lg" role="button" href="Curriculum_Vitae_(Stephen Baines).pdf" target="_blank">Download Resume</p>
-		</div>
-	  </div>
-	</div>
-</section>
-
-<section class="row clearfix">
-	<div class="spacer">
-	</div>
-</section>
-
-<section class="row clearfix text-center">
-	<div class="bg-fl bg-fl-2">
-	  <div class="bg-cn bg-left-cn">
+	<div class="bg-full bg-fl-0">
+	  <div class="bg-full-cn">
 		<div class="row text-center">
 		    <div class="col-sm-10 col-sm-offset-1">
-		      <h1 class="">Industry Experience</h1>
-		      <p class="lead">A Career spanning Three Industry Leading Multinational Corporations with skills developed at Highly-Ranked Educational Establishments</p>
-		      <p class="lead">Experiences through engagement with a diverse range of Clients, Industries and Sectors all leading to a Series of Awards and Recognitions.</p>
-		    </div>
-	    </div>
-
-	    <div class="row text-center">
-		    <div class="col-md-12">
-		      <p>
-		      	<%= image_tag('lg_hp.png', id: 'cert-image', alt: 'HP Logo') %>
-		      	<%= image_tag('lg_hpe.png', id: 'cert-image', alt: 'HPE Logo') %>
-		        <%= image_tag('lg_nissan.png', id: 'cert-image', alt: 'Nissan Logo') %>
-		      </p>
-		    </div>
+			    <p class="lead">Advising Leaders on Achieving their Digital & Technology-Enabled Vision</p>
+			    <p id="button" class="btn btn-primary btn-lg" role="button" href="Curriculum_Vitae_(Stephen Baines).pdf" target="_blank">Download Resume</p>
+			</div>
 		</div>
-      </div>
-    </div>
-</section>
-
-<section class="row clearfix">
-	<div class="spacer">
+	  </div>
 	</div>
 </section>
 
-<section class="row clearfix text-center">
-	<div class="bg-fl bg-fl-3">
-	  <div class="bg-cn bg-right-cn">
-		<div class="row">
-		    <div class="col-sm-10 col-sm-offset-1 text-center">
-		      <h1 class="">Education</h1>
-		      <p class="lead">Skills Developed at Highly-Ranked Educational Establishments & Summits:</p>
+<section class="row-masonry">
+
+	<section class="row clearfix text-center">
+		<%= link_to about_path do %>
+			<div class="bg-fl bg-fl-1 bg-effect" >
+			  <h1 class="box-header text-center">ABOUT</h1>
+			  <div class="bg-cn">
+
+		      </div>
+			  <p class="box-footer">Read more about Stephen's career, vision and mission whilst finding out more about his areas of expertise</p>
 		    </div>
+	    <% end %>
+	    
+		<%= link_to blog_path do %>
+			<div class="bg-fl bg-fl-2 bg-effect">
+			  <h1 class="box-header text-center">THE IMPACT INSIDER</h1>
+			  <div class="bg-cn">
+
+		      </div>
+		      <p class="box-footer">This weeks most inspiring, radically innovative tech news, as curated by Stephen and his team, supported by various sources</p>
+		    </div>
+		<% end %>
+
+		<%= link_to products_path do %>
+			<div class="bg-fl bg-fl-3 bg-effect">
+			  <h1 class="box-header text-center">INSIGHTS & REPORTS</h1>
+			  <div class="bg-cn">
+
+		      </div>
+		      <p class="box-footer">Review and Purchase insights and reports across focusing on a range of topics, covering varying degrees of focus produced by Stephen and his team</p>
+		    </div>
+		<% end %>
+
+		<div class="bg-fl bg-effect">
+		  <h1 class="box-header text-center">WORLD OF 2020</h1>
+		  <div class="bg-cn">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/uaYallt29Tg" frameborder="1" allowfullscreen></iframe>   
+	      </div>
+	      <p class="box-footer">Curious about what the World will look like in three-four years time? Watch this video</p>
 	    </div>
 
+		<%= link_to portfolio_path do %>
+			<div class="bg-fl bg-fl-4 bg-effect">
+			  <h1 class="box-header text-center">PORTFOLIO</h1>
+			  <div class="bg-cn">
+
+		      </div>
+			  <p class="box-footer">Develop insights into the experiences Stephen has shared with clients throughout various industry sectors across a multitude of high-profile projects</p>
+		    </div>
+	    <% end %>
+
+	    <%= link_to press_path do %>
+			<div class="bg-fl bg-fl-5 bg-effect">
+			  <h1 class="box-header text-center">MEDIA & PRESS</h1>
+			  <div class="bg-cn">
+
+		      </div>
+		      <p class="box-footer">Read Stephen's latest media features, cover stories and other major press coverage</p>
+		    </div>
+		<% end %>
+
+		<%= link_to contact_path do %>
+			<div class="bg-fl bg-fl-6 bg-effect">
+			  <h1 class="box-header text-center">CONTACT</h1>
+			  <div class="bg-cn">
+
+		      </div>
+		      <p class="box-footer">Find out how best to reach Stephen and his team through social channels and direct mail contact</p>
+		    </div>
+		<% end %>
+
+		<div class="bg-fl bg-effect">
+		  <h1 class="box-header text-center">MILLENIAL LEADERSHIP</h1>
+		  <div class="bg-cn">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/qatPOSUee_U" frameborder="1" allowfullscreen></iframe>  
+	      </div>
+	      <p class="box-footer">Unsure about how the World is embracing itself for a millenial leadership? Watch this video</p>
+	    </div>
+
+		<%= link_to speaking_path do %>
+			<div class="bg-fl bg-fl-7 bg-effect">
+			  <h1 class="box-header text-center">PUBLIC SPEAKING</h1>
+			  <div class="bg-cn">
+
+		      </div>
+		      <p class="box-footer">Hire Stephen for your next event and find out more view information about his insights and experiences</p>
+		    </div>
+		<% end %>
+
+		<%= link_to laws_path do %>		
+			<div class="bg-fl bg-fl-8 bg-effect">
+			  <h1 class="box-header text-center">STEPHEN'S LAWS</h1>
+			  <div class="bg-cn">
+
+		      </div>
+		      <p class="box-footer">Download a free copy of Stephen's 28 Laws to building towards and preparing for success</p>
+		    </div>
+	    <% end %>
+
+		<%= link_to vision_path do %>	
+			<div class="bg-fl bg-fl-9 bg-effect">
+			  <h1 class="box-header text-center">STEPHEN'S VISION</h1>
+			  <div class="bg-cn">
+
+		      </div>
+		      <p class="box-footer">Read about Stephen's vision for the World from a technological and innovation perspective</p>
+		    </div>
+		<% end %>
+
+		<div class="bg-fl bg-effect">
+		  <h1 class="box-header text-center">ENTREPRENEUR ADVICE</h1>
+		  <div class="bg-cn">
+			<iframe width="100%" height="100%" src="https://www.youtube.com/embed/Wa3Intzn9fY" frameborder="1" allowfullscreen></iframe>  
+	      </div>
+	      <p class="box-footer">Want to here from the Worlds most successful business leaders on what to, or not to focus on? Watch this video</p>
+	    </div>
+	</section>
+</section>
+
+<section class="row clearfix">
+	<div class="bg-full bg-fl-0">
+	  <div class="bg-full-cn">
 		<div class="row text-center">
-		    <div class="col-md-12">
-		      <p>
-		      	<%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
-		      	<%= image_tag('lg_ncl.jpg', id: 'cert-image', alt: 'Newcastle Uni Logo') %>
-		        <%= image_tag('lg_om.png', id: 'cert-image', alt: 'One Month Logo') %>
-		      	<%= image_tag('lg_ws.png', id: 'cert-image', alt: 'Web Summit Logo') %>
-		      	<%= image_tag('lg_oyw.jpg', id: 'cert-image', alt: 'One Young World Logo') %>
-		        <%= image_tag('lg_siyli.jpg', id: 'cert-image', alt: 'SIYLI Logo') %>	        
-		      </p>
-		    </div>
+		    <div class="col-sm-10 col-sm-offset-1">
+			    <p class="lead">Copyright &copy; 2016 Stephen J. Baines</p>
+			</div>
 		</div>
-      </div>
-    </div>
-</section>
-
-<section class="row clearfix">
-	<div class="spacer">
-	</div>
-</section>
-
-<section class="row clearfix text-center">
-	<div class="bg-fl bg-fl-4">
-	  <div class="bg-cn bg-left-cn">
-	    <div class="row text-center">
-	        <div class="col-md-12">
-	          <h1 class="">HPE Clients</h1>
-	          <p class="lead">Engagement across a Diverse Range of Clients, Industries and Sectors</p>
-	        </div>
-	    </div>
-
-	    <div class="row text-center">
-	        <div class="col-md-12">
-	          <p>
-	        	<%= image_tag('lg_po.png', id: 'cert-image', alt: 'Post Office Logo') %>
-	        	<%= image_tag('lg_lbs.png', id: 'cert-image', alt: 'Leeds Building Society Logo') %>
-	        	<%= image_tag('lg_allied.png', id: 'cert-image', alt: 'Allied Healthcare Logo') %>
-	        	<%= image_tag('lg_shell.png', id: 'cert-image', alt: 'Shell Logo') %>
-	        	<%= image_tag('lg_vodafone.png', id: 'cert-image', alt: 'Vodafone Logo') %>
-	        	<%= image_tag('lg_seadrill.png', id: 'cert-image', alt: 'Seadrill Logo') %>
-	        	<%= image_tag('lg_moj.png', id: 'cert-image', alt: 'Ministry of Justice Logo') %>
-	        	<%= image_tag('lg_rr.png', id: 'cert-image', alt: 'Rolls Royce Logo') %>
-	        	<%= image_tag('lg_alu.png', id: 'cert-image', alt: 'Alcatel Lucent Logo') %>
-	        	<%= image_tag('lg_atlas.png', id: 'cert-image', alt: 'Atlas Logo') %>                  
-	          </p>
-	        </div>
-	    </div>
 	  </div>
-    </div>
-</section>
-
-<section class="row clearfix">
-	<div class="spacer">
 	</div>
-</section>
-
-<section class="row clearfix">
-	<div class="bg-fl bg-fl-5">
-	  <div class="bg-full-cn bg-left-cn">
-	    <div class="row text-center">
-	        <div class="col-md-12">
-	          <h1 class="">Awards and Recognitions</h1>
-	          <p class="lead text-center">A Series of High-Profile Awards and Recognitions</p>
-	        </div>
-	    </div>
-	    <div class="row">
-		    <div class="col-md-12">
-		      <div class="col-md-3">
-		        <div class="cert-content">
-		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
-		          <p><Strong>Executive MBA</Strong></p>
-		          <p>Distinction Award</p><br>
-
-		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
-		          <p><Strong>Venture Out Competition 2015</Strong></p>
-		          <p>Finalist (Slint)</p><br>
-
-		      	  <%= image_tag('lg_ncl.jpg', id: 'cert-image', alt: 'Newcastle Uni Logo') %>
-		          <p><Strong>Computing Science</Strong></p>
-		          <p>Group Project Winners</p><br>
-
-		          <%= image_tag('lg_pmi.png', id: 'cert-image', alt: 'Project Management Inst Logo') %>
-		          <p><Strong>Certified Project Manager</Strong></p>
-		          <p>CAPM (Award)</p>
-		        </div>
-		      </div>
-		      <div class="col-md-3">
-		        <div class="cert-content">
-		      	  <%= image_tag('lg_ncl.jpg', id: 'cert-image', alt: 'Newcastle Uni Logo') %>
-		          <p><Strong>Bachelors of Science</Strong></p>
-		          <p>Upper 2:1 Award</p><br>
-
-		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
-		          <p><Strong>Venture Further Competition 2014</Strong></p>
-		          <p>Runner-Up (Fitifi)</p><br>
-
-	  	      	  <%= image_tag('lg_oyw.jpg', id: 'cert-image', alt: 'One Young World Logo') %>
-		          <p><Strong>One Young World</Strong></p>
-		          <p>Global Ambassador</p><br>
-
-		          <%= image_tag('lg_om.png', id: 'cert-image', alt: 'One Month Logo') %>
-		          <p><Strong>OneMonth.com</Strong></p>
-		          <p>Ruby on Rails Certification</p><br>
-		        </div>
-		      </div>
-		      <div class="col-md-3">
-		        <div class="cert-content">
-		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
-		          <p><Strong>Overall EMBA Performance</Strong></p>
-		          <p>Top 10% of Cohort</p><br>
-
-		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
-		          <p><Strong>What Next Conference 2014</Strong></p>
-		          <p>Best Business Proposal</p><br>
-
-		          <%= image_tag('lg_mec.png', id: 'cert-image', alt: 'Manchester Enterprise Centre Logo') %>
-		          <p><Strong>Enterprise Future Conference 2013</Strong></p>
-		          <p>2nd Place Business Proposal</p><br>
-
-		          <%= image_tag('lg_om.png', id: 'cert-image', alt: 'One Month Logo') %>
-		          <p><Strong>OneMonth.com</Strong></p>
-		          <p>HTML & CSS Certification</p><br>
-
-		          <img class="cert-image" src="">
-		          <p><Strong></Strong></p>
-		          <p></p>
-		        </div>
-		      </div>
-		      <div class="col-md-3">
-		        <div class="cert-content">
-		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
-		          <p><Strong>Best Individual Thesis</Strong></p>
-		          <p>Top Individual Project</p><br>
-
-		      	  <%= image_tag('lg_mbs.gif', id: 'cert-image', alt: 'Manchester Business School Logo') %>
-		          <p><Strong>Adv Strategic Management 2014</Strong></p>
-		          <p>Top Performer (Top 5%)</p><br>
-
-		          <%= image_tag('lg_om.png', id: 'cert-image', alt: 'One Month Logo') %>
-		          <p><Strong>OneMonth.com</Strong></p>
-		          <p>Stripe Payments Certification</p>
-
-		          <img class="cert-image" src="">
-		          <p><Strong></Strong></p>
-		          <p></p>
-		        </div>
-		      </div>
-	        </div>
-	    </div>
-	  </div>
-    </div>
-</section>
-
-<section class="row clearfix">
-	<div class="spacer">
-	</div>
-</section>
-
-<section class="row clearfix">
-	<div class="bg-fl bg-fl-6">
-	  <div class="bg-cn bg-left-cn">
-	    <h1 class="text-center">Blogs & Articles</h1>
-        <p class="lead text-center">Articles across an Array of Hot-Topics and Written to the Highest Standard</p>
-        <p>Stephen writes across a number of topics based upon his interests and expertise, including:</p>
-        <ul>
-        	<li>Technology</li>
-        	<li>Digital Strategy</li>
-        	<li>Business Model Design</li>
-        	<li>Radical Innovation</li>
-        	<li>Leadership</li>  
-        	<li>Career Development</li>
-        	<li>Emotional Intelligence</li>       	
-        </ul>
-        <p>Check-out his blog for more detail both on this website and on LinkedIn</p>
-        <a href="https://uk.linkedin.com/in/stephenbaines" target="_blank"><%= image_tag('linkedin.png', id: 'BgSocialIcon', alt: 'LinkedIn Link') %></a>
-      </div>
-    </div>
-</section>
-
-<section class="row clearfix">
-	<div class="spacer">
-	</div>
-</section>
-
-<section class="row clearfix">
-	<div class="bg-fl bg-fl-7">
-	  <div class="bg-cn bg-right-cn">
-	    <h1 class="text-center">Products & Services</h1>
-        <p class="lead text-center">Exemplary Tried-and-Test Services, Best Practice and Methodologies</p>
-        <p>Being a seasoned expert in his field, Stephen has developed a series of tried and test methodologies and best practices which are now available for purchase. These products and services include:</p>
-        <ul>
-        	<li>Best Practice Documentation</li>
-        	<li>Advisory Services</li>
-        	<li>Start-Up Mentoring</li>
-        	<li>Digital Media Content</li>
-        </ul>
-
-        <p>These products and services can be found described in the Products section</p>
-      </div>
-    </div>
 </section>
